@@ -1,6 +1,6 @@
 # amazonlinux2-python
 
-Building Python binaries in amazon linux2 environment.
+Building Python binaries in Amazon Linux 2 environment.
 
 ## Building Docker Image
 
@@ -18,9 +18,13 @@ Example for Python 3.10.9
 docker run --rm -v $PWD:/build -e PYTHON_VERSION=3.10.9 amazonlinux2-python
 ```
 
-`python3.10.9.tar.xz` is generated
+`python3.10.9.tar.xz` is generated in your current directory
 
 ## In your Amazon Linux 2 emviorment
+
+Copy tar.xz file into your Amazon Linux 2 environment
+
+Example for Python 3.10.9
 
 ```bash
 yum install -y tar xz gzip openssl11 openssl11-devel
